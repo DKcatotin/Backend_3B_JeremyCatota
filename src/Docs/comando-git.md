@@ -9,3 +9,18 @@ git init
 ````
 git remote add origin https://github.com/DKcatotin/Backend_3B_JeremyCatota.git
 ````
+# Validar referncia
+````
+git remote -v
+````
+--------------------
+```
+git add .
+git commit -m "Proyecto base"
+git put origin master
+```
+```
+- Para forzar
+
+git push -f origin master
+```
