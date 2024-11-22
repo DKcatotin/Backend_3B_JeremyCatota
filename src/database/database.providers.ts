@@ -12,7 +12,8 @@ export const databaseProvieder=[
                 port: +config.get('PORT_DB'),
                 username: config.get('USERNAME')||'root',
                 password: config.get('PASSWORD')||'prueba',
-                database: config.get('DATABASE')
+                database: config.get('DATABASE'),
+                entities: [__dirname + '/../**/*.entity{.ts,.js}'],
             })
             return dataSource.initialize();
         }
