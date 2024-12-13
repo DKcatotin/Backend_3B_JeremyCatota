@@ -20,7 +20,11 @@ export class CategoriaService {
   }
 
   async findOne(id: number) {
-    //return `This action returns a #${id} categoria`;
+    return this.categoriaRepository.findOne({
+      where:{
+        id:id
+      }
+      });
   }
 
   async update(id: number, updateCategoriaDto: UpdateCategoriaDto) {
@@ -30,4 +34,5 @@ export class CategoriaService {
   async remove(id: number) {
     return await this.categoriaRepository.delete(id);
   }
+  
 }
